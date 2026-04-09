@@ -1,0 +1,165 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 12px;
+  padding: 0 0;
+}
+
+.promo__row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  padding: 0 0;
+}
+
+.promo-card {
+  display: flex;
+  align-items: flex-end;
+  min-height: 200px;
+  border-radius: 6px;
+  overflow: hidden;
+  text-decoration: none;
+  position: relative;
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.promo-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.promo-card--dark {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 60%, #3d2a1a 100%);
+}
+
+.promo-card--garden {
+  background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 40%, #388e3c 100%);
+}
+
+.promo-card--wood {
+  background: linear-gradient(135deg, #5d4037 0%, #795548 50%, #8d6e63 100%);
+}
+
+.promo-card--spring {
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 50%, #a5d6a7 100%);
+}
+
+.promo-card--navy {
+  background: linear-gradient(135deg, #0d1b4b 0%, #1a2a6c 50%, #1565c0 100%);
+}
+
+.promo-card--teal {
+  background: linear-gradient(135deg, #00695c 0%, #00897b 50%, #26a69a 100%);
+}
+
+.promo-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.promo-card__brands {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+  font-size: 9px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.promo-card__sep {
+  color: rgba(255,255,255,0.5);
+}
+
+.promo-card__hashtag {
+  font-size: 13px;
+  color: rgba(255,255,255,0.8);
+  font-style: italic;
+  margin: 0;
+}
+
+.promo-card__title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #333;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.promo-card__title--light {
+  color: #fff;
+}
+
+.promo-card__badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 800;
+  background: #ffd600;
+  color: #333;
+  width: fit-content;
+  text-transform: uppercase;
+}
+
+.promo-card__badge--red {
+  background: #e31e24;
+  color: #fff;
+}
+
+.promo-card__badge--yellow {
+  background: #ffd600;
+  color: #333;
+}
+
+.promo-card__badge--white {
+  background: #fff;
+  color: #333;
+}
+
+.promo-card__sub {
+  font-size: 12px;
+  color: rgba(255,255,255,0.85);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.promo-card__sub--light {
+  color: rgba(255,255,255,0.85);
+}
+
+.promo-card__sub--dark {
+  color: rgba(255,255,255,0.9);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.promo-card__brand-text {
+  font-size: 22px;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.promo-card__brand-text--pampers {
+  font-size: 26px;
+  font-style: italic;
+}
+
+.promo-card__brand-text--bazzar {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255,255,255,0.8);
+}
+
+@media (max-width: 768px) {
+  .promo__row {
+    grid-template-columns: 1fr;
+  }
+}

@@ -10,6 +10,8 @@ export interface Product {
   reviewCount: number;
   badge?: string;
   isNew?: boolean;
+  brand?: string;
+  seller?: string;
 }
 
 export interface Category {

@@ -1,0 +1,141 @@
+.bl {
+  background: #fff;
+  padding: 24px 20px;
+  margin-bottom: 12px;
+}
+
+.bl__header {
+  margin-bottom: 16px;
+}
+
+.bl__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #222;
+  margin: 0;
+}
+
+.bl__grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.bl-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 16px 8px;
+  text-decoration: none;
+  background: #fff;
+  min-height: 70px;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.bl-card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-color: #ccc;
+}
+
+/* L'Oréal */
+.bl-card__loreal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.1;
+}
+
+.bl-card__loreal-main {
+  font-size: 14px;
+  font-weight: 900;
+  color: #1a237e;
+  letter-spacing: 1px;
+}
+
+.bl-card__loreal-sub {
+  font-size: 9px;
+  font-weight: 600;
+  color: #1a237e;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Mixa */
+.bl-card__mixa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bl-card__mixa-name {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 700;
+  color: #333;
+}
+
+.bl-card__mixa-sub {
+  font-size: 8px;
+  color: #666;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Maybelline */
+.bl-card__maybelline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.1;
+}
+
+.bl-card__maybelline-name {
+  font-size: 11px;
+  font-weight: 900;
+  color: #222;
+  letter-spacing: 0.5px;
+}
+
+.bl-card__maybelline-sub {
+  font-size: 9px;
+  color: #222;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* Garnier */
+.bl-card__garnier {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bl-card__garnier-name {
+  font-size: 16px;
+  font-weight: 900;
+  color: #2e7d32;
+  letter-spacing: 2px;
+}
+
+/* essie */
+.bl-card__essie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bl-card__essie-name {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 700;
+  color: #c62828;
+  font-family: Georgia, serif;
+}
+
+@media (max-width: 768px) {
+  .bl__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
