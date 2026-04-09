@@ -5,6 +5,7 @@
   border-right: 1px solid #e8e8e8;
   position: sticky;
   top: 0;
+  /* 110px = approximate combined height of header + sub-nav */
   height: calc(100vh - 110px);
   overflow-y: auto;
   scrollbar-width: thin;

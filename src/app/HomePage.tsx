@@ -9,14 +9,14 @@ import './HomePage.css';
 
 const HomePage: React.FC = () => {
   return (
-    <div className="homepage">
+    <main className="homepage">
       <Hero />
       <ProductCarousel />
       <BrandLogos />
       <PromoBanners />
       <ProductBanners />
       <Categories />
-    </div>
+    </main>
   );
 };
 
